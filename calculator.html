@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <form action="">
+      <fieldset>
+        <h1>Basic arithmetic operation</h1>
+        <input type="number" name="operand1" id="operand1" placeholder="enter first operand"><br>
+        <br>
+        <input type="number" name="operand2" id="operand2" placeholder="Enter second operand"><br>
+        <br>
+         <button id="add">addition</button>
+         <button id="sub">subtraction</button>
+         <button id="mul">multiply</button>
+         <button id="div">Divide</button>
+         <br>
+         <br>
+         <input type="number" name="result" id="result">
+      </fieldset>
+      <script>
+        document.querySelector('#add').addEventListener("click", function(event)
+        {
+          operand1=document.getElementById('operand1').value;
+          operand2=document.getElementById('operand2').value;
+          document.getElementById('result').value=parseInt(operand1)+parseInt(operand2);
+          event.preventDefault();
+        });
+
+        document.querySelector('#sub').addEventListener("click", function(event){
+          operand1=document.getElementById('operand1').value;
+          operand2=document.getElementById('operand2').value;
+
+          document.getElementById('result').value = parseInt(operand1)-parseInt(operand2);
+          event.preventDefault();
+        });
+          document.querySelector('#mul').addEventListener("click", function(event){
+            operand1= document.getElementById('operand1').value;
+            operand2= document.getElementById('operand2').value;
+
+            document.getElementById('result').value= parseInt(operand1) * parseInt(operand2);
+            event.preventDefault();
+         
+        });
+
+        document.querySelector('#div').addEventListener("click", function(event){
+          operand1=document.getElementById('operand1').value;   
+          operand2= document.getElementById('operand2').value;
+
+          document.getElementById('result').value = parseInt(operand1) / parseInt(operand2);
+          event.preventDefault();
+        });
+
+      </script>
+    </form>
+</body>
+</html>

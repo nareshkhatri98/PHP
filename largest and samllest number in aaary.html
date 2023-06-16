@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>largest and smallest</title>
+</head>
+<body>
+  
+  <h2>javascript largest and samllest number  in array</h2>
+    <script>
+      var number=[12,13,14,15,16,17,18,6];
+      function myfunction(){
+        number.sort(function(a,b)
+        {
+          return(a-b);
+        });
+        document.write("largest number is " +number[7]);
+         document.write("<br>");      
+        document.write('smallest number is ' +number[0]);
+      }
+      myfunction();
+    </script>
+</body>
+</html>

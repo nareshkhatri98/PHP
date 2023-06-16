@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>example of clinet side scripting</title>
+</head>
+<body>
+  <p>
+    clint side scripting refers to the script which runs on the clinet on user web bowser. this is written in langeuge like html
+    css, javascript ect and run on the clinet machine. it provides the dynamic and interactives web page by manupulating the content and behavior
+    of the pages. the main cause of use client script is form validation, handling user interaction.
+    below the example of the client side scripting.
+  </p>
+  <input type="text" id="name">
+  <button onclick="Demo()">Demo</button>
+  
+  <script>
+    function Demo(){
+      var name= document.getElementById('name').value;
+      alert('hello, ' +name +'!');
+    }
+  </script>
+</body>
+</html>
